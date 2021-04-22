@@ -1,0 +1,468 @@
+*{
+    
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #f1f3f4;
+    font-family: sans-serif;
+}
+.top-nav-nar{
+    height: 57px;
+    top: 0;
+    position: static;
+    background-color: #fff;
+    margin-bottom: 20px;
+    border-bottom:3px solid orange;
+    z-index: 2;
+}
+.logo{
+    width: 40px;
+    margin: 5px 10px;
+}
+.form-control{
+    margin-top: 9px;
+    margin-left:30px;
+    border: 1px  solid orange !important;
+    border-bottom-left-radius:20px !important;
+    border-top-left-radius: 20px !important;
+    border-bottom-right-radius:0px !important;
+    border-top-right-radius:0px !important;
+    box-shadow: none  !important;
+}
+.input-group-text{
+    margin: 8.5px 10px 19.5px 0 !important;
+    background: orange !important;;
+    border: 1px  solid orange !important;
+    border-bottom-left-radius:0px !important;
+    border-top-left-radius: 0px !important;
+    border-bottom-right-radius:20px !important;
+    border-top-right-radius:20px !important;
+    cursor: pointer;
+}
+.search-box{
+    display: inline-flex;
+    width: 60%;
+}
+.fa-search{
+    color: white;
+}
+.menu-bar{
+    width: 40%;
+    height: 57px;
+    float: right;
+}
+.menu-bar ul{
+    display: inline-flex;
+    float: right;
+}
+.menu-bar ul li{
+    border-style: 1px solid #fff;
+    list-style-type: none;
+    padding: 15px 35px;
+    text-align: center;
+    background-color: orange;
+    cursor: pointer;
+}
+.menu-bar ul li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+
+}
+.fa-shopping-basket{
+    
+    margin-right:5px;
+}
+@media only screen and (max-width:980px)
+{
+    .top-nav-nar{
+        height: 118px;
+        border-bottom: 0;
+    }
+    .search-box{
+        width: 100%;
+    }
+    .menu-bar{
+        width: 100%;
+    }
+    .menu-bar ul{
+        margin: 10px 0;
+        width: 100%;
+    }
+    .menu-bar ul li{
+        height: 57px;
+        width: 100%;
+    }
+}
+/*Side Menu.....................*/
+
+.side-menu{
+    height:79%;
+    width: 15%;
+    font-size: 14px;
+    float: left;
+    background-color: #ddd;
+    z-index: 2;
+    display: none;
+}
+.side-menu ul{
+    margin-left: 10px;
+}
+.side-menu ul li{
+    list-style-type: none;
+    font-weight: bold;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.side-menu ul li:hover{
+    color: orange;
+}
+.side-menu ul li ul{
+    display: none;
+    z-index: 10;
+    top: 77px;
+}
+.side-menu ul li:hover ul{
+    display: block;
+    height: 400px;
+    margin-left: 14%;
+    padding: 0 100px 10px 10px;
+    position: fixed;
+    background: #ececec;
+    box-shadow: 1px 1px 4px 1px rgb(0,0,0,0.5);
+}
+.fa-angle-right{
+margin-right: 8px;
+margin-top: 4px;
+float: right;
+
+}
+#menu-btn,#close-btn{
+    font-size: 30px;
+    margin: 10px;
+    color: orange;
+    display: none;
+}
+@media only screen and (max-width:980px){
+   .side-menu{
+       width: 34%;
+       z-index: 20;
+       top: 133px;
+       position: fixed;
+       font-size: 10px;
+   }
+   .side-menu ul li ul{
+       top: 133px;
+   }
+   .side-menu ul li:hover ul{
+   margin-left: 31%;
+}
+#menu-btn{
+    display: block;
+}
+}
+/*Slider........................*/
+.mySlides {display: none;}
+.mySlides img{
+    vertical-align: middle;
+    
+}
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+  .dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  .active {
+    background-color: #717171;
+  }
+  .fade {
+    animation: slide 20s infinite;
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 2s;
+    animation-name: fade;
+    animation-duration: 2s;
+   
+  }
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 980px) {
+    .text {font-size: 11px}
+  }
+
+/*.......Feature-categories.........*/
+.feature-categories{
+    margin: 50px 0px;
+    }
+.a img{
+   width: 200px;
+   height: 300px;
+    float: left;
+    margin-left: 14px;
+    transition: 0.5s;
+   cursor: pointer;
+}
+.feature-categories img:hover {
+    transform: scale(1,1.1);}
+    @media only screen and (max-width: 980px) {
+        .feature-categories{
+            margin: 10px 0px;
+            }
+        .a img{
+            width: 100px;
+            height: 150px;
+             float: left;
+             margin-top: 10px;
+             margin-left: 10px;
+             transition: 0.5s;
+            cursor: pointer;
+         }
+      }
+
+    /*---------On Sale-----------------*/
+.title-box{
+    background-color: orange;
+    color: white;
+    width: 180px;
+    padding: 4px 10px;
+    height: 40px;
+    margin-bottom: 30px;
+    display: flex;
+}
+.title-box h2{
+    font-size: 24px;
+}
+.title-box::after{
+    content: '';
+    border-top: 40px solid orange;
+    border-right: 50px solid transparent;
+    position: absolute;
+    display: flex;
+    margin-top: -4px;
+    margin-left: 170px;
+
+}
+/*...............product-top*/
+.product-top{
+    width: 100%;
+    
+}
+.col-md-3 img{
+    width: 150px;
+   
+}
+.product-top img{
+    width: 200px;
+    height: 250px;
+ 
+    
+
+}
+.overlay-right{
+    display: block;
+    opacity: 0;
+    position: absolute;
+    top: 10%;
+    margin-left: 0;
+    width: 70px;
+}
+.overlay-right .fa{
+cursor: pointer;
+background-color: white;
+color: #000;
+height: 35px;
+width: 35px;
+font-size: 20px;
+padding: 7px;
+margin-top: 5%;
+margin-bottom: 5%;
+}
+.overlay-right .btn-secondary{
+    background: none !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+.product-top:hover .overlay-right{
+    opacity: 1;
+    margin-left:5%;
+    transition: 0.5s;
+
+
+}
+
+/*..............Product-buttom-css........*/
+.product-bottom .fa{
+    color: orange;
+    font-size: 10px;
+
+
+}
+.product-bottom h3{
+    font-size: 20px;
+    font-weight: bold;
+}
+.product-bottom h5{
+    font-size: 15px;
+    padding-bottom: 10px;
+}
+.new-product{
+    margin: 50px 0;
+}
+/*---------Websit Features---------*/
+.website-features{
+    width: 60px 0;
+}
+.website-features img{
+    max-width: 20%;
+
+}
+.feature-text{
+margin-top: 10px;
+float: right;
+width: 80%;
+padding-left: 20px;
+
+}
+.feature-box{
+margin-top: 20px;
+
+}
+/*--------------footer----------------*/
+.footer{
+    margin-top: 50px;
+    background-color: black;
+    color:#fff;
+}
+.footer h1{
+    font-size: 15px;
+    margin: 25px 0;
+}
+.footer p{
+    font-size: 12px;
+}
+.copyright{
+    margin-bottom: -80px;
+    text-align: center;
+    font-size: 15px;
+    padding: 20px;
+}
+.fa-heart-o{
+    color: red;
+    font-size: 15px;
+}
+.footer hr{
+    margin-top: 15px;
+    background-color: #ccc;
+
+}
+.footer-img img{
+width: 150px;
+}
+.footer .row .fa{
+    padding-right: 20px;
+    font-size: 15px;
+}
+
+
+
+
+
+
+
+/*---------account-Page-----------*/
+.account-page
+{
+    padding: 50px 0;
+    background-color: salmon;
+  
+   
+   
+}
+.form-container{
+    background-color: #fff;
+    width: 300px;
+    height: 400px;
+    position: relative;
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0 0 20px 0px rgb(0,0,0,0.1);
+    overflow: hidden;
+    margin:auto;
+
+
+}
+.form-container span{
+    font-weight: bold;
+    padding: 0 10px;
+    color: #555;
+    cursor: pointer;
+    width: 100px;
+    display: inline-block;
+}
+.form-btn{
+display: inline-block;
+}
+.form-container form{
+    max-width: 300px;
+    padding: 0 20px;
+   position: absolute;
+    top: 130px;
+   transition:transform 1s;
+}
+form input{
+    width: 100%;
+    height: 30px;
+    margin: 10px 0;
+    padding: 0 10px;
+    border: 1px solid #ccc;
+}
+form .btn{
+    width: 100%;
+    border:none;
+    cursor: pointer;
+    margin: 10px 0;
+    background-color: salmon;
+}
+form .btn:focus{
+    outline: none;
+}
+#LoginForm{
+    left: -300px;
+
+}
+#RegForm{
+    left: 0;
+}
+form a{
+    font-size: 12px;
+}
+#Indicator{
+    width: 100px;
+    border: none;
+    background-color: #ff523b;
+    height: 3px;
+    margin-top: 8px;
+    transform: translateX(100px);
+    transition:transform 1s;
+}
+/*---cart items-----*/
